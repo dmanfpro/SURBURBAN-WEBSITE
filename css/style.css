@@ -1124,6 +1124,9 @@ img { display: block; max-width: 100%; }
   .stats-bar__grid { grid-template-columns: repeat(2, 1fr); }
   .maraude-grid { grid-template-columns: repeat(2, 1fr); }
   .onu-section { padding: 40px; }
+  /* Home president layout */
+  .home-president-grid { grid-template-columns: 1fr !important; }
+  .home-president-grid > div:first-child { max-width: 400px; margin: 0 auto; width: 100%; }
 }
 
 @media (max-width: 640px) {

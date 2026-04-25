@@ -199,26 +199,37 @@
 </section>
 
 <!-- ── PRÉSIDENT ── -->
-<section class="section">
+<section class="section" style="background:var(--black-card); border-top:1px solid var(--black-border); border-bottom:1px solid var(--black-border);">
   <div class="container">
-    <div class="president-section">
-      <div class="fade-up">
-        <div class="president-card">
-          <div class="president-card__avatar">
-            <img src="assets/images/1767211552839.jpeg" alt="Salim El Jihad — Président Suburban Think Tank" onerror="this.style.display='none'" />
-            S
-          </div>
-          <div class="president-card__name">Salim El Jihad</div>
-          <div class="president-card__role">Président — Fondateur</div>
-          <div class="president-card__tags">
-            <span class="president-card__tag">ONG</span>
-            <span class="president-card__tag">Nations Unies</span>
-            <span class="president-card__tag">BPJEPS</span>
-            <span class="president-card__tag">Nîmes</span>
-            <span class="president-card__tag">QPV</span>
+    <div class="home-president-grid" style="display:grid; grid-template-columns:420px 1fr; gap:72px; align-items:center;">
+
+      <!-- Photo portrait -->
+      <div class="fade-up" style="position:relative;">
+        <div style="position:relative; overflow:hidden; border:1px solid var(--black-border);">
+          <img
+            src="assets/images/1767211552839.jpeg"
+            alt="Salim El Jihad — Président Suburban Think Tank"
+            style="width:100%; display:block; object-fit:cover; object-position:center top; filter:grayscale(15%);"
+          />
+          <!-- Bande jaune décorative -->
+          <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:var(--yellow);"></div>
+          <!-- Overlay bas -->
+          <div style="position:absolute; bottom:0; left:0; right:0; padding:28px 24px; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);">
+            <div style="font-family:var(--font-heading); font-size:1.4rem; font-weight:700; text-transform:uppercase; color:var(--white); letter-spacing:0.02em;">Salim El Jihad</div>
+            <div style="font-family:var(--font-heading); font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--yellow); margin-top:6px;">Président &amp; Fondateur — Suburban Think Tank</div>
           </div>
         </div>
+        <!-- Tags flottants sous la photo -->
+        <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;">
+          <span class="president-card__tag">ONG</span>
+          <span class="president-card__tag">Nations Unies</span>
+          <span class="president-card__tag">BPJEPS</span>
+          <span class="president-card__tag">Nîmes · QPV</span>
+          <span class="president-card__tag">CNews · BFM TV · RTL</span>
+        </div>
       </div>
+
+      <!-- Texte -->
       <div class="fade-up fade-up-delay-1">
         <span class="section-label">Le Président</span>
         <h2>Un engagement <span class="yellow">du terrain<br />à l'international</span></h2>
@@ -237,10 +248,26 @@
             au narcotrafic.
           </p>
         </div>
+        <!-- Stats rapides -->
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:40px;">
+          <div style="background:var(--black); padding:20px; text-align:center;">
+            <div style="font-family:var(--font-heading); font-size:1.8rem; font-weight:700; color:var(--yellow);">2019</div>
+            <div style="font-family:var(--font-heading); font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--gray); margin-top:4px;">Fondateur</div>
+          </div>
+          <div style="background:var(--black); padding:20px; text-align:center;">
+            <div style="font-family:var(--font-heading); font-size:1.8rem; font-weight:700; color:var(--yellow);">ONU</div>
+            <div style="font-family:var(--font-heading); font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--gray); margin-top:4px;">Accrédité 2024</div>
+          </div>
+          <div style="background:var(--black); padding:20px; text-align:center;">
+            <div style="font-family:var(--font-heading); font-size:1.8rem; font-weight:700; color:var(--yellow);">3</div>
+            <div style="font-family:var(--font-heading); font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--gray); margin-top:4px;">Médias nationaux</div>
+          </div>
+        </div>
         <a href="pages/association.html" class="btn btn--primary mt-24">
           Son parcours complet →
         </a>
       </div>
+
     </div>
   </div>
 </section>
